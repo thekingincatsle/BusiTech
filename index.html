@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <label for="Name">Họ và tên </label>
+      <input type="text" id="Name" name="Name" placeholder="" /> <br />
+      <label for="DoB">Ngày tháng năm sinh </label>
+      <input type="date" id="DoB" name="DoB" placeholder="" /> <br />
+      <label for="Email">Email </label>
+      <input type="text" id="Email" name="Email" placeholder="" /> <br />
+      <label for="Phone">SĐT </label>
+      <input type="text" id="Phone" name="Phone" placeholder="" /> <br />
+      <div>
+        <p>Bạn là</p>
+        <div>
+          <input type="radio" id="year-1" name="Year" value="1" />
+          <label for="year-1">Sinh viên năm 1</label><br />
+          <input type="radio" id="year-2" name="Year" value="2" />
+          <label for="year-2">Sinh viên năm 2</label><br />
+          <input type="radio" id="year-3" name="Year" value="3" />
+          <label for="yaer-3">Sinh viên năm 3</label> <br />
+          <input type="radio" id="year-4" name="Year" value="4" />
+          <label for="yaer-4">Sinh viên năm 4</label> <br />
+        </div>
+      </div>
+      <label for="University">Sinh viên trường: </label>
+      <input type="text" id="University" name="University" placeholder="" />
+      <br />
+      <label for="Majors">Chuyên nghành </label>
+      <input type="text" id="Majors" name="Majors" placeholder="" />
+      <br />
+      <label for="Source">Bạn biết đến BusiTech thông qua đâu? </label>
+      <input type="text" id="Source" name="Source" placeholder="" />
+      <br />
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.querySelector("#form");
+      const submitButton = document.querySelector("#submit");
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwuRe2wy6YjZ9zc1r4ozwIFrRhybULVIyjUpxPp1afhsv_7bMLzucM34pBXu6Ex4eY1/exec";
+
+      form.addEventListener("submit", (e) => {
+        submitButton.disabled = true;
+        e.preventDefault();
+        let requestBody = new FormData(form);
+        fetch(scriptURL, { method: "POST", body: requestBody })
+          .then((response) => {
+            alert("Success!", response);
+            submitButton.disabled = false;
+          })
+          .catch((error) => {
+            alert("Error!", error.message);
+            submitButton.disabled = false;
+          });
+      });
+    </script>
+  </body>
+</html>
