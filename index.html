@@ -4,10 +4,167 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BusiTech Bootcamp</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="form">
+    <nav
+      class="bg-black bg-opacity-50 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 text-white"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="#" class="flex items-center">
+          <img src="./images/logo.png" class="w-14" alt="BusiTech Logo" />
+          <span
+            class="self-center text-2xl font-bold whitespace-nowrap text-white"
+            >BusiTech</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="text-white bg-transparent border border-white border-opacity-70 hover:border-opacity-100 focus:ring-4 focus:outline-none font-medium rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0"
+          >
+            Apply now
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-3 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#why-busitech"
+                class="block py-2 pl-3 pr-4 text-white"
+                aria-current="page"
+                >Why BusiTech?</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white"
+                aria-current="page"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white"
+                aria-current="page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header bg-cover py-40 rounded-bl-[8rem]">
+      <div class="px-40 pt-10">
+        <img src="./images/name.png" class="w-[500px]" alt="name" />
+        <p class="text-white w-[700px] mt-4 pl-3 text-justify">
+          BusiTech Bootcamp is a collaborative program between HUST and FTU that
+          nurtures new technology projects with practical applications and high
+          value. Participants receive in-depth training and work together to
+          build feasible projects with real-world value.
+        </p>
+        <button
+          type="button"
+          class="mt-6 ml-3 text-white bg-transparent border-[1.5px] border-white hover:bg-white hover:text-primary focus:ring-4 focus:outline-none font-medium rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0 hover:duration-300"
+        >
+          Apply now
+        </button>
+      </div>
+    </header>
+    <main class="">
+      <section
+        id="why-busitech"
+        class="max-w-[1500px] px-32 m-auto py-14 flex items-center gap-x-5"
+      >
+        <div class="w-[55%]">
+          <h2 class="text-4xl font-semibold text-primary">Why BusiTech?</h2>
+          <div class="mt-10">
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-primary mb-3">
+                Opportunity for practical application
+              </h3>
+              <p>
+                BusiTech Bootcamp offers participants the opportunity to
+                incubate new technology projects with practical applications
+                that can create real-world value. Through the program,
+                participants will receive training and work together to build
+                feasible projects that can be implemented successfully.
+              </p>
+            </div>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-primary mb-3">
+                In-depth training
+              </h3>
+              <p>
+                The program provides in-depth training on both technical and
+                business aspects, giving participants a comprehensive
+                understanding of the process of building a successful tech
+                product. Additionally, the program offers a networking day,
+                where participants can exchange ideas and experiences with other
+                like-minded individuals.
+              </p>
+            </div>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-primary mb-3">
+                Mentorship and guidance
+              </h3>
+              <p>
+                BusiTech Bootcamp offers mentorship and guidance from
+                experienced industry professionals, who can provide valuable
+                insights and advice on how to develop a successful tech product.
+                The intensive bootcamp also provides an opportunity for
+                mentor-led sessions to further refine and polish the projects.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grow flex justify-end">
+          <img class="rounded-3xl" src="./images/cover_4.jpg" alt="cover-img" />
+        </div>
+      </section>
+      <!-- <section class="bg-primary h-36"></section> -->
+    </main>
+    <!-- <form id="form">
       <label for="Name">Họ và tên </label>
       <input type="text" id="Name" name="Name" placeholder="" /> <br />
       <label for="DoB">Ngày tháng năm sinh </label>
@@ -39,28 +196,8 @@
       <input type="text" id="Source" name="Source" placeholder="" />
       <br />
       <button id="submit" type="submit">Submit</button>
-    </form>
+    </form> -->
 
-    <script>
-      const form = document.querySelector("#form");
-      const submitButton = document.querySelector("#submit");
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwuRe2wy6YjZ9zc1r4ozwIFrRhybULVIyjUpxPp1afhsv_7bMLzucM34pBXu6Ex4eY1/exec";
-
-      form.addEventListener("submit", (e) => {
-        submitButton.disabled = true;
-        e.preventDefault();
-        let requestBody = new FormData(form);
-        fetch(scriptURL, { method: "POST", body: requestBody })
-          .then((response) => {
-            alert("Success!", response);
-            submitButton.disabled = false;
-          })
-          .catch((error) => {
-            alert("Error!", error.message);
-            submitButton.disabled = false;
-          });
-      });
-    </script>
+    <script src="./src/main.js"></script>
   </body>
 </html>
