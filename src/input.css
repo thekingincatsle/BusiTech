@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.header {
-  background-image: url(../images/cover_3.png);
-  background-position: center center;
-}
