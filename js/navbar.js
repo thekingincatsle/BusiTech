@@ -1,4 +1,4 @@
-setTimeout(() => {
+const bgNavChangeOnscroll = () => {
     const navbar = document.getElementsByClassName('navbar').item(0);
     const navHeight = navbar.offsetHeight;
     window.onscroll = function () {
@@ -6,8 +6,17 @@ setTimeout(() => {
             navbar.classList.add('bg-primary')
         } else navbar.classList.remove('bg-primary')
     }
-}, 50);
+}
 
+const implementDropdownMenu = () => {
+    const btn = document.getElementsByClassName('dropdownBtn').item(0);
+    const dropdownContent = document.getElementsByClassName('dropdownContent').item(0);
+    btn.addEventListener('click', () => {
+        dropdownContent.classList.toggle('active')
+    })
+}
 
-
-
+setTimeout(() => {
+    bgNavChangeOnscroll();
+    implementDropdownMenu();
+}, 100);
