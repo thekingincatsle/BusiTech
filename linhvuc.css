@@ -56,7 +56,7 @@
 .linhvuc{
     width: 100%;
     height: auto;
-    padding: 50px 0px;
+    padding: 50px 0px 30px 0px;
     display: grid;
     place-items: center;
     background-image: url(./images/cover_3.png);
@@ -84,5 +84,5 @@
     font-size: 100%;
     font-weight: 500;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
 }
