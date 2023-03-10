@@ -2,3 +2,8 @@
   background-image: url(./images/cover_3.png);
   background-position: center center;
 }
+
+
+.navbar {
+  transition: background-color 0.5s ease-in-out;
+}
