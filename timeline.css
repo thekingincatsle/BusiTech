@@ -136,12 +136,7 @@ ul li p{
     margin: 7px 0;
     line-height: 23px;
 }
-/* Chuan bi cho link readmore */
-/* ul li a{
-    font-size: 15px;
-    color: rgb(106, 6, 236);
-    text-decoration: none;
-} */
+
 ul li .date{
     font-family: SFUFuturaRegular;
     position: absolute;
@@ -197,7 +192,7 @@ ul li .date{
         transform: translateX(15px);
     }
     .container ul::after{
-        left: -30px;
+        left: -16px;
     }
     .container ul li{
         width: 100%;
