@@ -3,24 +3,4 @@
   background-position: center center;
 }
 
-@media (max-width:1023px) {
-  .dropdownContent {
-    display: none;
-    animation: slide-in 0.5s;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    right: -100px;
-  }
-
-  to {
-    right: 0;
-  }
-}
-
-.active {
-  display: block;
-}
 
