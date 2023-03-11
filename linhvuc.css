@@ -86,3 +86,8 @@
     color: #fff;
     padding: 10px;
 }
+@media screen and (min-width:993px){
+    .linhvuc .div-content{
+        justify-content: center;
+    }
+}
