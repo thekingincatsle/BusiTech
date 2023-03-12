@@ -3,4 +3,65 @@
   background-position: center center;
 }
 
+/* Form  */
+#form {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/cover_3.png);
+  background-position: center center;
+}
 
+.form-wrapper {
+  width: 928px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form-wrapper .form-title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: #231c6f;
+}
+
+.form-wrapper .form-title::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background: #a52adb;
+  left: calc(50% - 20px);
+  bottom: 0;
+}
+
+.form-wrapper label,
+.form-wrapper .label {
+  font-size: 14px;
+  color: #231c6f;
+}
+
+.form-wrapper .quote {
+  font-size: 13px;
+  color: #231c6f;
+}
+
+.form-wrapper label:not(:last-child)::after {
+  content: "*";
+  color: #da0f0f;
+}
+
+.form-wrapper input {
+  opacity: 1;
+}
+
+.form-wrapper .form-submit {
+  background: #a52adb;
+}
+
+.form-wrapper .form-submit:hover {
+  background: #a52adb;
+  opacity: 0.8;
+}
+
+.form-wrapper .form-checkbox-input {
+  border: none !important;
+}

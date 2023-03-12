@@ -1,33 +1,190 @@
-<form id="form">
-  <label for="Name">Họ và tên </label>
-  <input type="text" id="Name" name="Name" placeholder="" /> <br />
-  <label for="DoB">Ngày tháng năm sinh </label>
-  <input type="date" id="DoB" name="DoB" placeholder="" /> <br />
-  <label for="Email">Email </label>
-  <input type="text" id="Email" name="Email" placeholder="" /> <br />
-  <label for="Phone">SĐT </label>
-  <input type="text" id="Phone" name="Phone" placeholder="" /> <br />
-  <div>
-    <p>Bạn là</p>
-    <div>
-      <input type="radio" id="year-1" name="Year" value="1" />
-      <label for="year-1">Sinh viên năm 1</label><br />
-      <input type="radio" id="year-2" name="Year" value="2" />
-      <label for="year-2">Sinh viên năm 2</label><br />
-      <input type="radio" id="year-3" name="Year" value="3" />
-      <label for="yaer-3">Sinh viên năm 3</label> <br />
-      <input type="radio" id="year-4" name="Year" value="4" />
-      <label for="yaer-4">Sinh viên năm 4</label> <br />
+<form id="form" class="bg-cover py-20 px-12">
+  <div
+    class="px-20 py-12 pt-10 max-[900px]:flex flex-col max-[900px]:px-20 max-sm:px-12 form-wrapper"
+  >
+    <p class="form-title text-center">Application Form</p>
+    <div class="flex flex-wrap -mx-3 mb-6 mt-16">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label
+          class="block tracking-wide text-gray-700 text-xs mb-2"
+          for="team-name"
+        >
+          Tên đội thi
+        </label>
+        <input
+          class="bg-white-100 appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="team-name"
+          type="text"
+          required
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label
+          class="block tracking-wide text-gray-700 text-xs mb-2"
+          for="project-name"
+        >
+          Tên dự án
+        </label>
+        <input
+          class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="project-name"
+          type="text"
+          required
+        />
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label
+          class="block tracking-wide text-gray-700 text-xs mb-2"
+          for="fullname-deputy"
+        >
+          Họ và tên người đại diện
+        </label>
+        <input
+          class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="fullname-deputy"
+          type="text"
+          required
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label
+          class="block tracking-wide text-gray-700 text-xs mb-2"
+          for="birthday"
+        >
+          Ngày tháng năm sinh
+        </label>
+        <input
+          class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="birthday"
+          type="date"
+          required
+        />
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <label
+          class="block tracking-wide text-gray-700 text-xs mb-2"
+          for="phone-deputy"
+        >
+          Số điện thoại
+        </label>
+        <input
+          class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="phone-deputy"
+          type="text"
+          required
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-3">
+        <label
+          class="block tracking-wide text-gray-700 text-xs mb-2"
+          for="email-deputy"
+        >
+          Email
+        </label>
+        <input
+          class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="email-deputy"
+          type="email"
+          required
+        />
+      </div>
+    </div>
+    <div class="flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <label
+          class="block tracking-wide text-gray-700 text-xs mb-2"
+          for="cv-team"
+        >
+          Đính kèm link CV và mô tả dự án (nếu có) theo mẫu tại đây:
+        </label>
+        <input
+          class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+          id="cv-team"
+          type="text"
+          required
+        />
+        <p class="text-gray-600 text-xs italic quote">
+          Trong CV đội thi nên có: thông tin học vấn và GPA, các dự án đã từng
+          tham gia, các thành tích đã đạt được trong quá khứ,...
+        </p>
+      </div>
+    </div>
+    <div class="mt-8 flex flex-wrap -mx-3 mb-6">
+      <div class="w-full px-3">
+        <p
+          class="block tracking-wide text-gray-700 text-xs mb-2 label"
+          for="form-option"
+        >
+          Bạn biết đến BusiTech thông qua đâu?
+        </p>
+        <div class="form-checkbox-group">
+          <div class="form-checkbox">
+            <input
+              type="checkbox"
+              id="checkbox1"
+              name="checkbox1"
+              class="form-checkbox-input bg-white-500"
+            />
+            <label for="checkbox1" class="form-checkbox-label"
+              >Fanpage chương trình</label
+            >
+          </div>
+          <div class="form-checkbox">
+            <input
+              type="checkbox"
+              id="checkbox2"
+              name="checkbox2"
+              class="form-checkbox-input bg-white-500"
+            />
+            <label for="checkbox2" class="form-checkbox-label"
+              >Fanpage các đơn vị tổ chức báo chí</label
+            >
+          </div>
+          <div class="form-checkbox">
+            <input
+              type="checkbox"
+              id="checkbox3"
+              name="checkbox3"
+              class="form-checkbox-input bg-white-500"
+            />
+            <label for="checkbox3" class="form-checkbox-label"
+              >Đặt bàn truyền thông</label
+            >
+          </div>
+          <div class="form-checkbox">
+            <input
+              type="checkbox"
+              id="checkbox3"
+              name="checkbox3"
+              class="form-checkbox-input bg-white-500"
+            />
+            <label for="checkbox3" class="form-checkbox-label"
+              >Các kênh MXH khác (Youtube, TikTok,...)</label
+            >
+          </div>
+          <div class="form-checkbox">
+            <input
+              type="checkbox"
+              id="checkbox3"
+              name="checkbox3"
+              class="form-checkbox-input bg-white-500"
+            />
+            <label for="checkbox3" class="form-checkbox-label">Others</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center">
+      <button
+        type="submit"
+        class="text-white font-normal py-2 px-6 rounded form-submit"
+      >
+        Submit
+      </button>
     </div>
   </div>
-  <label for="University">Sinh viên trường: </label>
-  <input type="text" id="University" name="University" placeholder="" />
-  <br />
-  <label for="Majors">Chuyên nghành </label>
-  <input type="text" id="Majors" name="Majors" placeholder="" />
-  <br />
-  <label for="Source">Bạn biết đến BusiTech thông qua đâu? </label>
-  <input type="text" id="Source" name="Source" placeholder="" />
-  <br />
-  <button id="submit" type="submit">Submit</button>
 </form>
