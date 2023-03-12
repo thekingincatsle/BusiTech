@@ -192,7 +192,7 @@ ul li .date{
         transform: translateX(15px);
     }
     .timeline-container ul::after{
-        left: -16px;
+        left: -15px;
     }
     .timeline-container ul li{
         width: 100%;
@@ -208,10 +208,11 @@ ul li .date{
         left: 20px;
     }
     .timeline-container ul li:nth-child(odd) .circle{
-        left: -30px;
+        left: -15px;
         transform: translate(-50%, -50%);
     }
     .timeline-container ul li:nth-child(even){
         transform: translateX(0);
+        left: 15px;
     }
 }
