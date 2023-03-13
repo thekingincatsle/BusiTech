@@ -14,6 +14,10 @@
               "primary-theme": "#231C6F",
               "primary-purple": "#A629DA",
             },
+            fontFamily: {
+              sf: ["SFUFuturaBook", "san-serif"],
+              "sf-bold": ["SFUFuturaBold", "sans-serif"],
+            },
           },
         },
         plugins: [],
@@ -23,7 +27,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="timeline.css">
   </head>
-  <body>
+  <body class="">
     <div include-html="navBar.html"></div>
     <div include-html="header.html"></div>
     <main class="">
@@ -50,7 +54,7 @@
                   Tên đội thi
                 </label>
                 <input
-                  class="input-field bg-white-100 appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field bg-white-100 appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="team-name"
                   type="text"
                   name="team name"
@@ -65,7 +69,7 @@
                   Tên dự án
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="project-name"
                   type="text"
                   required
@@ -82,7 +86,7 @@
                   Họ và tên người đại diện
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="fullname-deputy"
                   type="text"
                   required
@@ -99,7 +103,7 @@
                   Số điện thoại
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="phone-deputy"
                   type="text"
                   required
@@ -114,7 +118,7 @@
                   Email
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="email-deputy"
                   type="email"
                   required
@@ -128,10 +132,16 @@
                   class="block tracking-wide text-gray-700 text-xs mb-2"
                   for="cv-team"
                 >
-                  Đính kèm link CV và mô tả dự án (nếu có) theo mẫu tại đây:
+                  Đính kèm link CV và mô tả dự án (nếu có) theo mẫu tại
+                  <a
+                    class="text-primary-purple hover:underline"
+                    href="https://url.gdsc.dev/BusiTech-MauHoSo"
+                    target="_blank"
+                    >đây</a
+                  >:
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="cv-team"
                   type="text"
                   required
