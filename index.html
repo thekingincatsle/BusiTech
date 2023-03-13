@@ -49,7 +49,7 @@
                   Tên đội thi
                 </label>
                 <input
-                  class="bg-white-100 appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field bg-white-100 appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="team-name"
                   type="text"
                   name="team name"
@@ -64,7 +64,7 @@
                   Tên dự án
                 </label>
                 <input
-                  class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="project-name"
                   type="text"
                   required
@@ -81,7 +81,7 @@
                   Họ và tên người đại diện
                 </label>
                 <input
-                  class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="fullname-deputy"
                   type="text"
                   required
@@ -98,7 +98,7 @@
                   Số điện thoại
                 </label>
                 <input
-                  class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="phone-deputy"
                   type="text"
                   required
@@ -113,7 +113,7 @@
                   Email
                 </label>
                 <input
-                  class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="email-deputy"
                   type="email"
                   required
@@ -130,7 +130,7 @@
                   Đính kèm link CV và mô tả dự án (nếu có) theo mẫu tại đây:
                 </label>
                 <input
-                  class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="cv-team"
                   type="text"
                   required
@@ -190,24 +190,24 @@
                   <div class="form-checkbox">
                     <input
                       type="checkbox"
-                      id="checkbox3"
+                      id="checkbox4"
                       value="các kênh mxh"
                       class="form-checkbox-input bg-white-500"
                       name="source"
                     />
-                    <label for="checkbox3" class="form-checkbox-label"
+                    <label for="checkbox4" class="form-checkbox-label"
                       >Các kênh MXH khác (Youtube, TikTok,...)</label
                     >
                   </div>
                   <div class="form-checkbox">
                     <input
                       type="checkbox"
-                      id="checkbox3"
+                      id="checkbox5"
                       value="others"
                       class="form-checkbox-input bg-white-500"
                       name="source"
                     />
-                    <label for="checkbox3" class="form-checkbox-label"
+                    <label for="checkbox5" class="form-checkbox-label"
                       >Others</label
                     >
                   </div>
@@ -218,8 +218,23 @@
               <button
                 id="submit"
                 type="submit"
-                class="text-white font-normal py-2 px-6 rounded form-submit busitech-submit"
+                class="text-white font-normal py-2 px-6 rounded form-submit busitech-submit flex items-center gap-2"
               >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  id="loading-icon"
+                  class="animate-spin w-5 h-5 hidden"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
                 Apply now
               </button>
             </div>
