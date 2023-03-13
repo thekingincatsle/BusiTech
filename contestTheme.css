@@ -1,0 +1,118 @@
+@font-face {
+    font-family: SFUFuturaBold;
+    src: url(./fonts/SFUFuturaBold.TTF);
+}
+@font-face {
+    font-family: SFUFuturaBoldOblique;
+    src: url(./fonts/SFUFuturaBoldOblique.TTF);
+}
+@font-face {
+    font-family: SFUFuturaBook;
+    src: url(./fonts/SFUFuturaBook.TTF);
+}
+@font-face {
+    font-family: SFUFuturaBookOblique;
+    src: url(./fonts/SFUFuturaBookOblique.TTF);
+}
+@font-face {
+    font-family: SFUFuturaExtraBold;
+    src: url(./fonts/SFUFuturaExtraBold.TTF);
+}
+@font-face {
+    font-family: SFUFuturaExtraBoldOblique;
+    src: url(./fonts/SFUFuturaExtraBoldOblique.TTF);
+}
+@font-face {
+    font-family: SFUFuturaHeavy;
+    src: url(./fonts/SFUFuturaHeavy.TTF);
+}
+@font-face {
+    font-family: SFUFuturaHeavyOblique;
+    src: url(./fonts/SFUFuturaHeavyOblique.TTF);
+}
+@font-face {
+    font-family: SFUFuturaLight;
+    src: url(./fonts/SFUFuturaLight.TTF);
+}
+@font-face {
+    font-family: SFUFuturaLightOblique;
+    src: url(./fonts/SFUFuturaLightOblique.TTF);
+}
+@font-face {
+    font-family: SFUFuturaObliqueTTF;
+    src: url(./fonts/SFUFuturaObliqueTTF.TTF);
+}
+@font-face {
+    font-family: SFUFuturaRegular;
+    src: url(./fonts/SFUFuturaRegular.TTF);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contestTheme{
+    width: 100%;
+    height: auto;
+    padding: 50px 32px 30px 32px;
+    display: grid;
+    place-items: center;
+    background-image: url(./images/cover_3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contestTheme .contestThemeContainer{
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 100%; 
+}
+.contestTheme .contestThemeContainer .contestThemeRow0 .contestThemeItem0 {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+.contestTheme .contestThemeContainer .contestThemeRow0  .contestThemeHeading{
+    font-size: 196%;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    font-family: SFUFuturaBold;
+}
+
+.contestTheme .contestThemeContainer .contestThemeRow  .contestThemeTitle{
+    font-family: SFUFuturaExtraBold;
+    font-size: 396%;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+.contestTheme .contestThemeContainer .contestThemeRow  .contestThemeContent{
+    font-family: SFUFuturaBook;
+    font-size: 100%;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+}
+.contestTheme .contestThemeContainer .contestThemeRow .contestThemeItem {
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+/* CSS MOBILE && TABLET */
+@media screen and (max-width:992px){
+
+}
+/* CSS >LAPTOP */
+@media screen and (min-width:993px){
+    .contestTheme .contestThemeContainer .contestThemeRow {
+        width:100%;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+    }
+}
