@@ -53,7 +53,7 @@
     box-sizing: border-box;
 }
 
-.linhvuc{
+.contestTheme{
     width: 100%;
     height: auto;
     padding: 50px 32px 30px 32px;
@@ -64,30 +64,55 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.linhvuc .heading{
+.contestTheme .contestThemeContainer{
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 100%; 
+}
+.contestTheme .contestThemeContainer .contestThemeRow0 .contestThemeItem0 {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+.contestTheme .contestThemeContainer .contestThemeRow0  .contestThemeHeading{
     font-size: 196%;
     font-weight: 500;
     color: #fff;
     position: relative;
     font-family: SFUFuturaBold;
-    
 }
-.linhvuc .title{
+
+.contestTheme .contestThemeContainer .contestThemeRow  .contestThemeTitle{
     font-family: SFUFuturaExtraBold;
     font-size: 396%;
     font-weight: 500;
     color: #fff;
     margin: 0;
 }
-.linhvuc strong{
+.contestTheme .contestThemeContainer .contestThemeRow  .contestThemeContent{
     font-family: SFUFuturaBook;
     font-size: 100%;
     font-weight: 500;
     color: #fff;
     padding: 10px;
 }
+.contestTheme .contestThemeContainer .contestThemeRow .contestThemeItem {
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+/* CSS MOBILE && TABLET */
+@media screen and (max-width:992px){
+
+}
+/* CSS >LAPTOP */
 @media screen and (min-width:993px){
-    .linhvuc .div-content{
-        justify-content: center;
+    .contestTheme .contestThemeContainer .contestThemeRow {
+        width:100%;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
     }
 }
