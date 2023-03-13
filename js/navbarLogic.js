@@ -6,8 +6,8 @@ const bgNavChangeOnscroll = () => {
       document.body.scrollTop > navHeight ||
       document.documentElement.scrollTop >= navHeight
     ) {
-      navbar.classList.add("bg-primary");
-    } else navbar.classList.remove("bg-primary");
+      navbar.classList.add("bg-primary-theme");
+    } else navbar.classList.remove("bg-primary-theme");
   };
 };
 

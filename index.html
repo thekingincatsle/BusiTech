@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,6 +14,10 @@
               "primary-theme": "#231C6F",
               "primary-purple": "#A629DA",
             },
+            fontFamily: {
+              sf: ["SFUFuturaBook", "san-serif"],
+              "sf-bold": ["SFUFuturaBold", "sans-serif"],
+            },
           },
         },
         plugins: [],
@@ -22,7 +26,7 @@
     <title>BusiTech Bootcamp</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="">
     <div include-html="navBar.html"></div>
     <div include-html="header.html"></div>
     <main class="">
@@ -49,7 +53,7 @@
                   Tên đội thi
                 </label>
                 <input
-                  class="input-field bg-white-100 appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field bg-white-100 appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="team-name"
                   type="text"
                   name="team name"
@@ -64,7 +68,7 @@
                   Tên dự án
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="project-name"
                   type="text"
                   required
@@ -81,7 +85,7 @@
                   Họ và tên người đại diện
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="fullname-deputy"
                   type="text"
                   required
@@ -98,7 +102,7 @@
                   Số điện thoại
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="phone-deputy"
                   type="text"
                   required
@@ -113,7 +117,7 @@
                   Email
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="email-deputy"
                   type="email"
                   required
@@ -130,7 +134,7 @@
                   Đính kèm link CV và mô tả dự án (nếu có) theo mẫu tại đây:
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="cv-team"
                   type="text"
                   required
