@@ -1,19 +1,34 @@
-const form = document.querySelector("#form");
-const submitButton = document.querySelector("#submit");
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbwuRe2wy6YjZ9zc1r4ozwIFrRhybULVIyjUpxPp1afhsv_7bMLzucM34pBXu6Ex4eY1/exec";
+window.addEventListener("load", function (event) {
+  // your code ....
+  const form = document.getElementById("form");
+  const submitButton = document.getElementById("submit");
+  const loadingIcon = document.getElementById("loading-icon");
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbzxlG0MkZOAeEcZctc3FjI8pFzLpPGV5t5UffpQ6oXX_p35Fo5qp2HiLAa2pF97Cdr-Kw/exec";
 
-form.addEventListener("submit", (e) => {
-  submitButton.disabled = true;
-  e.preventDefault();
-  let requestBody = new FormData(form);
-  fetch(scriptURL, { method: "POST", body: requestBody })
-    .then((response) => {
-      alert("Success!", response);
-      submitButton.disabled = false;
-    })
-    .catch((error) => {
-      alert("Error!", error.message);
-      submitButton.disabled = false;
+  form.addEventListener("submit", (e) => {
+    submitButton.disabled = true;
+    e.preventDefault();
+    const inputs = document.querySelectorAll(".input-field");
+    const checkbox = document.querySelectorAll('input[type="checkbox"]');
+    let requestBody = new FormData(form);
+
+    // clear input value after submit
+    inputs.forEach((input) => {
+      input.value = "";
     });
+    checkbox.forEach((i) => (i.checked = false));
+
+    loadingIcon.classList.remove("hidden");
+    fetch(scriptURL, { method: "POST", body: requestBody })
+      .then((response) => {
+        loadingIcon.classList.add("hidden");
+        alert("Your application form is sent successfully!", response);
+        submitButton.disabled = false;
+      })
+      .catch((error) => {
+        alert("Error!", error.message);
+        submitButton.disabled = false;
+      });
+  });
 });
