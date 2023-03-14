@@ -31,4 +31,21 @@ window.addEventListener("load", function (event) {
         submitButton.disabled = false;
       });
   });
+
+  function reveal() {
+    var sectionList = document.getElementsByClassName("moveable");
+    for (let i = 0; i < sectionList.length; i++) {
+      animate(sectionList[i], 200);
+    }
+  }
+  function animate(element, elementVisible) {
+    var windowHeight = window.innerHeight;
+    var elementTop = element.getBoundingClientRect().top;
+    if (elementTop < windowHeight - elementVisible) {
+      element.classList.add("active");
+    } else {
+      element.classList.remove("active");
+    }
+  }
+  window.addEventListener("scroll", reveal);
 });

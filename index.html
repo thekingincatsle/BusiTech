@@ -26,17 +26,17 @@
     </script>
     <title>BusiTech Bootcamp</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="timeline.css" />
   </head>
-  <body class="">
-    <div include-html="navBar.html"></div>
-    <div include-html="header.html"></div>
+  <body>
+    <div include-html="navBar.html" class="active"></div>
+    <div include-html="header.html" class="active"></div>
     <main class="">
-      <div include-html="whyBusitech.html"></div>
-      <div include-html="contestTheme.html"></div>
-      <div include-html="timeline.html"></div>
+      <div include-html="whyBusitech.html" class="moveable"></div>
+      <div include-html="contestTheme.html" class="moveable"></div>
+      <div include-html="timeline.html" class="moveable"></div>
       <!-- <div include-html="form.html"></div> -->
-      <div>
+      <div class="moveable">
         <form id="form" class="busitech-form bg-cover py-20 lg:px-12 px-8">
           <div
             class="px-16 py-12 pt-10 max-[900px]:flex flex-col max-[900px]:px-20 max-sm:px-5 form-wrapper rounded-lg"
@@ -253,9 +253,9 @@
           </div>
         </form>
       </div>
-      <div include-html="ourMentors.html"></div>
-      <div class="bg-[#231C6F]" include-html="organizer.html"></div>
-      <div include-html="partners.html"></div>
+      <div include-html="ourMentors.html" class="moveable"></div>
+      <div class="bg-[#231C6F] moveable" include-html="organizer.html"></div>
+      <div include-html="partners.html" class="moveable"></div>
       <div include-html="footer.html"></div>
     </main>
 
