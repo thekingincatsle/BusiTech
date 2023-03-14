@@ -65,3 +65,16 @@
 .form-wrapper .form-checkbox-input {
   border: none !important;
 }
+.active {
+  animation: moveable 1.5s;
+}
+@keyframes moveable {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
