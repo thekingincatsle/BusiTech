@@ -35,7 +35,7 @@ window.addEventListener("load", function (event) {
   function reveal() {
     var sectionList = document.getElementsByClassName("moveable");
     for (let i = 0; i < sectionList.length; i++) {
-      animate(sectionList[i], 200);
+      animate(sectionList[i], -80);
     }
   }
   function animate(element, elementVisible) {
