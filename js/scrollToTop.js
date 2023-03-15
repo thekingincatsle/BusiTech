@@ -21,8 +21,8 @@ window.onload = function () {
 
   function scrollFunction() {
     if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
+      document.body.scrollTop > document.body.clientHeight / 2 ||
+      document.documentElement.scrollTop > document.body.clientHeight / 2
     ) {
       myButton.style.display = "block";
     } else {
@@ -33,15 +33,7 @@ window.onload = function () {
   myButton.addEventListener("click", backToTop);
 
   function backToTop() {
-    if (
-      document.body.scrollTop > document.body.clientHeight / 2 ||
-      document.documentElement.scrollTop > document.body.clientHeight / 2
-    ) {
-      document.body.scrollTop -= document.body.clientHeight / 2;
-      document.documentElement.scrollTop -= document.body.clientHeight / 2;
-    } else {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 };
