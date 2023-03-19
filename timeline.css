@@ -215,16 +215,21 @@ ul li .date {
   .timeline-container ul li:nth-child(odd) {
     text-align: left;
     transform: translateX(0);
+    left: 4px;
   }
   .timeline-container ul li:nth-child(odd) .date {
     left: 20px;
   }
   .timeline-container ul li:nth-child(odd) .circle {
-    left: -14px;
+    left: -18px;
+    transform: translate(-50%, -50%);
+  }
+  .timeline-container ul li:nth-child(even) .circle {
+    left: -18px;
     transform: translate(-50%, -50%);
   }
   .timeline-container ul li:nth-child(even) {
     transform: translateX(0);
-    left: 15px;
+    left: 4px;
   }
 }

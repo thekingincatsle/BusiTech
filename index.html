@@ -29,23 +29,23 @@
     <link rel="stylesheet" href="timeline.css" />
   </head>
   <body>
-    <div include-html="navBar.html" class="active"></div>
-    <div include-html="header.html" class="active"></div>
+    <div include-html="navBar.html"></div>
+    <div include-html="header.html"></div>
     <main class="">
       <div include-html="whyBusitech.html" class="moveable"></div>
       <div include-html="contestTheme.html" class="moveable"></div>
       <div include-html="timeline.html" class="moveable"></div>
-      <div class="bg-[#f5f5f5] moveable" include-html="prize.html"></div>
+      <div class="bg-[#f5f5f5]" include-html="prize.html"></div>
       <!-- <div include-html="form.html"></div> -->
-      <div class="moveable">
+      <div>
         <form id="form" class="busitech-form bg-cover py-20 lg:px-12 px-8">
           <div
-            class="px-16 py-12 pt-10 max-[900px]:flex flex-col max-[900px]:px-20 max-sm:px-5 form-wrapper rounded-lg"
+            class="moveable px-16 py-12 pt-10 max-[900px]:flex flex-col max-[900px]:px-20 max-sm:px-5 form-wrapper rounded-lg"
           >
             <h3
-              class="relative text-center font-semibold md:text-3xl text-primary-theme after:absolute after:-translate-x-1/2 after:h-0.5 xl:after:w-12 after:bg-primary-purple after:left-1/2 after:-bottom-3 text-xl after:w-10"
+              class="relative text-center font-semibold md:text-3xl text-primary-theme after:absolute after:-translate-x-1/2 after:h-0.5 xl:after:w-12 after:bg-primary-purple after:left-1/2 after:-bottom-3 sm:text-[28px] text-[24px] after:w-10"
             >
-              Application form
+              ĐƠN ĐĂNG KÝ
             </h3>
             <div class="flex flex-wrap -mx-3 lg:mb-6 lg:mt-16 mb-3 mt-10">
               <div class="w-full md:w-1/2 px-3">
@@ -260,12 +260,12 @@
       <div include-html="footer.html"></div>
     </main>
 
-    <div class="active">
+    <div>
       <button
         type="button"
         data-mdb-ripple="true"
         data-mdb-ripple-color="light"
-        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+        class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 hidden"
         id="btn-back-to-top"
       >
         <svg

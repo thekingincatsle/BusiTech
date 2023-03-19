@@ -101,10 +101,14 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 15px;
 }
 /* CSS MOBILE && TABLET */
 @media screen and (max-width: 992px) {
+  .contestTheme .contestThemeContainer .contestThemeRow .contestThemeItem {
+    justify-content: start;
+  }
 }
 /* CSS >LAPTOP */
 @media screen and (min-width: 993px) {

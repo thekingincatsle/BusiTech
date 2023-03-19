@@ -1,5 +1,6 @@
 const bgNavChangeOnscroll = () => {
   const navbar = document.getElementsByClassName("navbar").item(0);
+  const myButton = document.getElementById("btn-back-to-top");
   const navHeight = navbar.offsetHeight;
   window.onscroll = function () {
     if (
@@ -8,6 +9,13 @@ const bgNavChangeOnscroll = () => {
     ) {
       navbar.classList.add("bg-primary-theme");
     } else navbar.classList.remove("bg-primary-theme");
+
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop >= 200
+    ) {
+      myButton.classList.remove("hidden");
+    } else myButton.classList.add("hidden");
   };
 };
 
@@ -24,4 +32,4 @@ const implementDropdownMenu = () => {
 setTimeout(() => {
   bgNavChangeOnscroll();
   implementDropdownMenu();
-}, 100);
+}, 200);
