@@ -44,7 +44,7 @@
   color: #231c6f;
 }
 
-.form-wrapper label:not(:last-child)::after {
+.form-wrapper label.required-label::after {
   content: "*";
   color: #da0f0f;
 }

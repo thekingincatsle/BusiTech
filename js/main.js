@@ -4,7 +4,7 @@ window.addEventListener("load", function (event) {
   const submitButton = document.getElementById("submit");
   const loadingIcon = document.getElementById("loading-icon");
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzxlG0MkZOAeEcZctc3FjI8pFzLpPGV5t5UffpQ6oXX_p35Fo5qp2HiLAa2pF97Cdr-Kw/exec";
+    "https://script.google.com/macros/s/AKfycbyfHwxtHKlQsFxNRm9EzGxigLEULASo2mDeCIjel8EHuRyKXcbxDoIhi10ysWpRzihsFA/exec";
 
   form.addEventListener("submit", (e) => {
     submitButton.disabled = true;

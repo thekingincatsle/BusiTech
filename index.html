@@ -45,9 +45,9 @@
             <h3
               class="relative text-center font-semibold md:text-3xl text-primary-theme after:absolute after:-translate-x-1/2 after:h-0.5 xl:after:w-12 after:bg-primary-purple after:left-1/2 after:-bottom-3 sm:text-[28px] text-[24px] after:w-10"
             >
-              ĐƠN ĐĂNG KÝ
+              ĐƠN ĐĂNG KÝ THAM DỰ ĐÊM CHUNG KẾT
             </h3>
-            <p class="text-center mt-8 text-primary-theme font-semibold">
+            <!-- <p class="text-center mt-8 text-primary-theme font-semibold">
               Để ghép đội, các bạn truy cập group (<a
                 class="text-primary-purple hover:underline"
                 href="https://www.facebook.com/groups/ketnoibusitech/"
@@ -59,8 +59,8 @@
                 target="_blank"
                 >link</a
               >)
-            </p>
-            <div class="flex flex-wrap -mx-3 lg:mb-6 lg:mt-10 mb-3 mt-10">
+            </p> -->
+            <!-- <div class="flex flex-wrap -mx-3 lg:mb-6 lg:mt-10 mb-3 mt-10">
               <div class="w-full md:w-1/2 px-3">
                 <label
                   class="block tracking-wide text-gray-700 text-xs mb-2"
@@ -91,28 +91,112 @@
                   name="project name"
                 />
               </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 lg:mb-6">
-              <div class="w-full px-3">
+            </div> -->
+            <div class="flex flex-wrap -mx-3 lg:mb-6 mb-3 mt-6 lg:mt-10">
+              <div class="w-full px-3 mt-5">
                 <label
-                  class="block tracking-wide text-gray-700 text-xs mb-2"
+                  class="block required-label tracking-wide text-gray-700 text-xs mb-2"
                   for="fullname-deputy"
                 >
-                  Họ và tên người đại diện
+                  Họ và tên
                 </label>
                 <input
-                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-2.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="fullname-deputy"
                   type="text"
                   required
-                  name="representative"
+                  name="fullname"
                 />
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 lg:mb-6 mb-3">
-              <div class="w-full md:w-1/2 px-3">
+              <div class="w-full px-3">
                 <label
                   class="block tracking-wide text-gray-700 text-xs mb-2"
+                  for="student-id"
+                >
+                  Mã số sinh viên (nếu là sinh viên HUST hoặc FTU)
+                </label>
+                <input
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-2.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="student-id"
+                  type="text"
+                  name="student-id"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 lg:mb-6 mb-3">
+              <div class="w-full px-3">
+                <label
+                  class="block required-label tracking-wide text-gray-700 text-xs mb-2"
+                  for="Major-Class"
+                >
+                  Khóa - Chuyên ngành - Lớp
+                </label>
+                <input
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-2.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="Major-Class"
+                  type="text"
+                  required
+                  name="Major-Class"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 lg:mb-6 mb-3">
+              <div class="w-full px-3">
+                <label
+                  class="block required-label tracking-wide text-gray-700 text-xs mb-2"
+                  for="university"
+                >
+                  Trường
+                </label>
+                <input
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-2.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="university"
+                  type="text"
+                  required
+                  name="university"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 lg:mb-6 mb-3">
+              <div class="w-full px-3">
+                <label
+                  class="block required-label tracking-wide text-gray-700 text-xs mb-2"
+                  for="email"
+                >
+                  Email nhận vé
+                </label>
+                <input
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-2.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="email"
+                  type="text"
+                  required
+                  name="email"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-10">
+              <div class="w-full px-3">
+                <label
+                  class="block required-label tracking-wide text-gray-700 text-xs mb-2"
+                  for="phone"
+                >
+                  Số điện thoại
+                </label>
+                <input
+                  class="input-field appearance-none block w-full text-gray-700 border border-gray-200 rounded py-1.5 lg:py-2.5 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="phone"
+                  type="text"
+                  required
+                  name="phone"
+                />
+              </div>
+            </div>
+            <!-- <div class="flex flex-wrap -mx-3 lg:mb-6 mb-3 mb-3">
+              <div class="w-full md:w-1/2 px-3">
+                <label
+                  class="block required-label tracking-wide text-gray-700 text-xs mb-2"
                   for="phone-deputy"
                 >
                   Số điện thoại
@@ -239,7 +323,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="flex justify-center items-center">
               <button
                 id="submit"
@@ -261,7 +345,7 @@
                     d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
                   />
                 </svg>
-                Apply now
+                ĐĂNG KÝ
               </button>
             </div>
           </div>
